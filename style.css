@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#formulaire {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4e73df;
+}
+
+#btn-ajouter {
+    background: #4e73df;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#btn-ajouter:hover {
+    opacity: 0.9;
+}
+
+#liste-etudiants {
+    list-style: none;
+}
+
+#liste-etudiants li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admis {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.moyen {
+    background: linear-gradient(135deg, #ff9800, #ffc107);
+}
+
+.echoue {
+    background: linear-gradient(135deg, #dc3545, #ff6b6b);
+}
+
+.btn-modifier,
+.btn-supprimer {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-modifier {
+    background: white;
+    color: #ff9800;
+}
+
+.btn-supprimer {
+    background: white;
+    color: #dc3545;
+}
+
+.btn-modifier:hover,
+.btn-supprimer:hover {
+    transform: scale(1.05);
+}
+
+#btn-tout-effacer {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#stats {
+    margin-top: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#stats p {
+    margin: 8px 0;
+}
+
+#erreur {
+    margin-top: 10px;
+    font-weight: bold;
+}
